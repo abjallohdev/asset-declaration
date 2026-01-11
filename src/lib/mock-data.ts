@@ -80,8 +80,8 @@ export interface Report {
 export const USERS: User[] = [
   {
     id: "u1",
-    name: "System Administrator",
-    email: "superadmin@ads.gov",
+    name: "Sarah Marshall",
+    email: "smarshall@ads.gov",
     role: "SUPER_ADMIN",
     designation: "Super Admin",
     status: "Active",
@@ -89,8 +89,8 @@ export const USERS: User[] = [
   },
   {
     id: "u2",
-    name: "ACC Administrator",
-    email: "admin@ads.gov",
+    name: "Kevin Banks",
+    email: "kevinbanks@ads.gov",
     role: "ACC_ADMIN",
     designation: "ADS Manager",
     status: "Active",
@@ -98,8 +98,8 @@ export const USERS: User[] = [
   },
   {
     id: "u3",
-    name: "John Officer",
-    email: "officer@ads.gov",
+    name: "John Cena",
+    email: "cenajohn@ads.gov",
     role: "PUBLIC_OFFICER",
     mda: "Ministry of Finance",
     designation: "Senior Officer",
@@ -108,8 +108,8 @@ export const USERS: User[] = [
   },
   {
     id: "u4",
-    name: "Jane Citizen",
-    email: "user@ads.gov",
+    name: "Jane Doe",
+    email: "janedoe@ads.gov",
     role: "PUBLIC_USER",
     designation: "Citizen",
     status: "Active",
@@ -123,6 +123,9 @@ export const MDAS = [
   "Ministry of Education",
   "Department of Public Works",
   "Revenue Authority",
+  "National Social Security & Insurance Trust",
+  "National Disaster Management",
+  "National Ports Authority",
 ];
 
 export const DISTRICTS = [

@@ -3,7 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LogOut, ChevronRight } from "lucide-react";
+import { LogOut, ChevronRight, Command } from "lucide-react";
 
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import {
@@ -43,17 +43,21 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props} className="border-r border-sidebar-border bg-sidebar-background">
       <SidebarHeader>
-        <div className="flex items-center gap-2 px-2 py-4">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary text-primary-foreground font-bold shadow-sm">
-            ADS
-          </div>
-          <div className="flex flex-col gap-0.5 leading-none">
-            <span className="font-semibold tracking-wide text-sm">{config?.header.logo || "InfoSafe"}</span>
-            <span className="text-[10px] uppercase font-medium text-muted-foreground truncate w-32">
-                {config?.header.subtitle || "Asset System"}
-            </span>
-          </div>
-        </div>
+        <SidebarMenu>
+          <SidebarMenuItem>
+            <SidebarMenuButton size="lg" asChild>
+              <a href="#">
+                <div className="bg-sidebar-primary text-sidebar-primary-foreground flex aspect-square size-8 items-center justify-center rounded-lg">
+                  <Command className="size-4" />
+                </div>
+                <div className="grid flex-1 text-left text-sm leading-tight">
+                  <span className="truncate font-medium">{config?.header.logo || "InfoSafe"}</span>
+                  <span className="truncate text-xs">{config?.header.subtitle || "Asset System"}</span>
+                </div>
+              </a>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
+        </SidebarMenu>
       </SidebarHeader>
       <SidebarContent>
         <SidebarMenu>
@@ -115,7 +119,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
              <div className="flex items-center gap-2 flex-1 min-w-0 overflow-hidden group-data-[collapsible=icon]:justify-center">
                  <Avatar className="h-8 w-8 border border-border">
                     <AvatarImage src={user?.avatarUrl} alt={user?.name} />
-                    <AvatarFallback className="bg-primary/10 text-primary">{user?.name?.substring(0, 2).toUpperCase()}</AvatarFallback>
+                    <AvatarFallback className="bg-primary/10 text-primary font-bold text-xs">{user?.name?.substring(0, 2).toUpperCase()}</AvatarFallback>
                 </Avatar>
                 <div className="group-data-[collapsible=icon]:hidden flex flex-col text-sm overflow-hidden truncate">
                     <span className="font-medium text-foreground truncate leading-none mb-0.5">{user?.name}</span>
