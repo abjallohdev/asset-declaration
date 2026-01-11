@@ -56,7 +56,7 @@ export default function Home() {
             <div className="container mx-auto px-4 h-16 flex items-center justify-between">
                 <div className="font-semibold text-xl tracking-tight text-foreground">ADS Transparency Portal</div>
                 <div className="flex items-center gap-4">
-                     <Link href="/login" className="text-sm font-medium text-primary hover:underline">Officer Login</Link>
+                     <Link href="/login" className="text-sm font-medium text-primary hover:underline">Login</Link>
                 </div>
             </div>
        </header>

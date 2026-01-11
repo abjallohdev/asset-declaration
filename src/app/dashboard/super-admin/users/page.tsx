@@ -93,7 +93,7 @@ export default function UsersPage() {
                             <SelectContent>
                                 <SelectItem value="PUBLIC_USER">Public User</SelectItem>
                                 <SelectItem value="PUBLIC_OFFICER">Public Officer</SelectItem>
-                                <SelectItem value="ADS_ADMIN">ADS Admin</SelectItem>
+                                <SelectItem value="ADS_ADMIN">ACC Admin</SelectItem>
                                 <SelectItem value="VERIFIER">Verifier</SelectItem>
                                 <SelectItem value="SUPER_ADMIN">Super Admin</SelectItem>
                             </SelectContent>

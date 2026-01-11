@@ -1,5 +1,5 @@
 
-export type UserRole = "ADS_ADMIN" | "SUPER_ADMIN" | "PUBLIC_OFFICER" | "PUBLIC_USER" | "VERIFIER";
+export type UserRole = "ACC_ADMIN" | "SUPER_ADMIN" | "PUBLIC_OFFICER" | "PUBLIC_USER" | "VERIFIER";
 
 export interface User {
   id: string;
@@ -89,9 +89,9 @@ export const USERS: User[] = [
   },
   {
     id: "u2",
-    name: "ADS Administrator",
+    name: "ACC Administrator",
     email: "admin@ads.gov",
-    role: "ADS_ADMIN",
+    role: "ACC_ADMIN",
     designation: "ADS Manager",
     status: "Active",
     lastLogin: "2024-03-11 08:30 AM",

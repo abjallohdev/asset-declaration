@@ -52,7 +52,7 @@ export default function LoginPage() {
   
   const fillCredential = (demoEmail: string) => {
       form.setValue("email", demoEmail);
-      form.setValue("password", "password123"); 
+      form.setValue("password", "password"); 
   };
 
   return (

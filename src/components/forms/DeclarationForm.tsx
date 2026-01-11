@@ -117,9 +117,33 @@ export function DeclarationForm() {
     toast.info("Draft saved");
   };
 
+  // Helper to get fields for current step validation
+  const getFieldsForStep = (step: number): any[] => {
+      switch (step) {
+          case 0: return ["surname", "firstName", "otherNames", "gender", "dob", "citizenship", "maritalStatus"];
+          case 1: return ["contact"];
+          case 2: return ["family"];
+          case 3: return ["employment"];
+          case 4: return ["cashAssets"];
+          case 5: return ["immovableAssets"];
+          case 6: return ["movableAssets"];
+          case 7: return ["securities"];
+          case 8: return ["liabilities"];
+          case 9: return ["otherAssets"];
+          default: return [];
+      }
+  };
+
   const nextStep = async () => {
-    saveDraft();
-    dispatch(setCurrentStep(Math.min(currentStep + 1, STEPS.length - 1)));
+    const fields = getFieldsForStep(currentStep);
+    const isValid = await form.trigger(fields as any);
+    
+    if (isValid) {
+        saveDraft(); // Save valid state
+        dispatch(setCurrentStep(Math.min(currentStep + 1, STEPS.length - 1)));
+    } else {
+        toast.error("Please fix errors before proceeding.");
+    }
   };
 
   const prevStep = () => {
@@ -144,13 +168,13 @@ export function DeclarationForm() {
         await declarationService.submitDeclaration(data);
         await db.drafts.delete("current_draft"); 
         
-        // Notify ADS Admins
+        // Notify ACC Admins
         notificationService.addNotification({
-            userId: "ROLE:ADS_ADMIN",
+            userId: "ROLE:ACC_ADMIN",
             title: "New Declaration Submitted",
             message: `Officer ${data.firstName} ${data.surname} has submitted their declaration.`,
             type: "info",
-            link: "/dashboard/ads-admin/declarations"
+            link: "/dashboard/acc-admin/declarations"
         });
 
         toast.success("Declaration submitted successfully!");
