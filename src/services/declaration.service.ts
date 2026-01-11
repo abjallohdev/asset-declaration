@@ -8,6 +8,11 @@ export const declarationService = {
     return api.get<Declaration[]>('/api/officer/declarations');
   },
 
+  getById: async (id: string): Promise<Declaration | undefined> => {
+      const decls = await api.get<Declaration[]>('/api/officer/declarations');
+      return decls.find(d => d.id === id);
+  },
+
   submitDeclaration: async (data: DeclarationFormValues): Promise<{ success: boolean; id: string }> => {
     // Attach userId from session (for JSON server compatibility)
     let userId = "u3"; // Default fallback
