@@ -1,0 +1,545 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "name": "Super Administrator",
+      "email": "superadmin@ads.gov",
+      "role": "SUPER_ADMIN",
+      "designation": "System Owner",
+      "status": "Active",
+      "lastLogin": "2024-03-10 09:45 AM",
+      "password": "password"
+    },
+    {
+      "id": "u2",
+      "name": "ACC Administrator",
+      "email": "admin@ads.gov",
+      "role": "ADS_ADMIN",
+      "designation": "ACC Manager",
+      "status": "Active",
+      "lastLogin": "2024-03-11 08:30 AM",
+      "password": "password"
+    },
+    {
+      "id": "u3",
+      "name": "John Public Officer",
+      "email": "officer@ads.gov",
+      "role": "PUBLIC_OFFICER",
+      "mda": "Ministry of Finance",
+      "designation": "Senior Officer",
+      "status": "Active",
+      "lastLogin": "2024-03-12 10:15 AM",
+      "password": "password"
+    },
+    {
+      "id": "u4",
+      "name": "Jane Citizen",
+      "email": "user@ads.gov",
+      "role": "PUBLIC_USER",
+      "designation": "Citizen",
+      "status": "Active",
+      "lastLogin": "2024-03-09 02:20 PM",
+      "password": "password"
+    }
+  ],
+  "declarations": [
+    {
+      "id": "d1",
+      "userId": "u3",
+      "year": 2024,
+      "date": "2024-01-15",
+      "status": "SUBMITTED",
+      "surname": "Officer",
+      "otherNames": "John",
+      "dob": "1980-05-15",
+      "maritalStatus": "Married",
+      "contact": {
+        "phones": [
+          "+232 76 123 456",
+          "+232 30 987 654"
+        ],
+        "email": "john.officer@mda.gov",
+        "confirmEmail": "john.officer@mda.gov",
+        "presentAddress": "123 Hillcut Road, Freetown",
+        "district": "Western Area Urban",
+        "province": "Western Area",
+        "permanentAddressSameAsPresent": true,
+        "nationalId": "NID12345678"
+      },
+      "family": [
+        {
+          "surname": "Officer",
+          "firstName": "Mary",
+          "relationship": "Spouse",
+          "gender": "Female",
+          "nationality": "Sierra Leonean",
+          "address": "Same as above",
+          "occupation": "Teacher"
+        },
+        {
+          "surname": "Officer",
+          "firstName": "Junior",
+          "relationship": "Child",
+          "gender": "Male",
+          "nationality": "Sierra Leonean",
+          "occupation": "Student",
+          "institution": "Freetown Secondary School"
+        }
+      ],
+      "employment": [
+        {
+          "type": "Current",
+          "employer": "Ministry of Finance",
+          "designation": "Senior Officer",
+          "startDate": "2015-06-01",
+          "annualSalary": 120000,
+          "currency": "NGN",
+          "allowances": 15000,
+          "allowanceDetails": "Transport & Housing",
+          "empId": "EMP001",
+          "ssn": "SSN998877"
+        }
+      ],
+      "cashAssets": [
+        {
+          "bankName": "Sierra Leone Commercial Bank (SLCB)",
+          "accountNumber": "1234567890",
+          "currency": "NGN",
+          "type": "Savings",
+          "balance": 50000,
+          "ownership": {
+            "owner": "Self",
+            "registeredOwner": "John Officer"
+          }
+        }
+      ],
+      "immovableAssets": [
+        {
+          "type": "Building",
+          "location": "Goderich, Freetown",
+          "currentValue": 200000,
+          "currency": "NGN",
+          "acquisition": {
+            "date": "2010",
+            "cost": 150000,
+            "currency": "NGN",
+            "mode": "Purchase"
+          },
+          "ownership": {
+            "owner": "Joint",
+            "registeredOwner": "John & Mary Officer"
+          }
+        }
+      ],
+      "movableAssets": [
+        {
+          "type": "Vehicle",
+          "description": "Toyota Land Cruiser",
+          "currentValue": 15000,
+          "currency": "USD",
+          "acquisition": {
+            "date": "2020",
+            "cost": 25000,
+            "currency": "USD",
+            "mode": "Purchase"
+          },
+          "ownership": {
+            "owner": "Self",
+            "registeredOwner": "John Officer"
+          }
+        }
+      ],
+      "securities": [
+        {
+          "companyName": "Rokel Commercial Bank",
+          "numberOfShares": 1000,
+          "currentMarketValue": 10000,
+          "ownership": {
+            "owner": "Self",
+            "registeredOwner": "John Officer"
+          }
+        }
+      ],
+      "liabilities": [],
+      "otherAssets": [
+        {
+          "description": "Gold Watch",
+          "value": 5000,
+          "currency": "USD",
+          "acquisition": {
+            "year": "2019",
+            "cost": 4000
+          },
+          "ownership": {
+            "owner": "Self",
+            "registeredOwner": "John Officer"
+          }
+        }
+      ],
+      "assets": {
+        "cash": 50000,
+        "immovable": 200000,
+        "movable": 15000,
+        "securities": 10000,
+        "other": 5000
+      },
+      "liabilitiesTotal": 0
+    },
+    {
+      "id": "d2",
+      "userId": "u3",
+      "year": 2023,
+      "date": "2023-01-10",
+      "status": "VERIFIED",
+      "assets": {
+        "cash": 45000,
+        "immovable": 190000,
+        "movable": 15000,
+        "securities": 8000,
+        "other": 5000
+      },
+      "liabilitiesTotal": 2000
+    },
+    {
+      "id": "d3",
+      "userId": "u4",
+      "year": 2024,
+      "date": "2024-02-01",
+      "status": "PENDING_VERIFICATION",
+      "assets": {
+        "cash": 12000,
+        "immovable": 80000,
+        "movable": 40000,
+        "securities": 0,
+        "other": 2000
+      },
+      "liabilitiesTotal": 15000
+    },
+    {
+      "surname": "",
+      "otherNames": "",
+      "dob": "",
+      "maritalStatus": "Single",
+      "contact": {
+        "phones": [
+          ""
+        ],
+        "email": "",
+        "confirmEmail": "",
+        "permanentAddress": "",
+        "presentAddress": "",
+        "nationalId": "",
+        "district": "",
+        "province": "",
+        "passportNumber": "",
+        "permanentAddressSameAsPresent": false,
+        "permanentDistrict": "",
+        "permanentProvince": ""
+      },
+      "family": [
+        {
+          "surname": "",
+          "firstName": "",
+          "middleName": "",
+          "relationship": "Child",
+          "gender": "Female",
+          "occupation": "",
+          "institution": "",
+          "designation": ""
+        }
+      ],
+      "employment": [],
+      "cashAssets": [
+        {
+          "bankName": "",
+          "currency": "USD",
+          "balance": 0,
+          "accountNumber": "",
+          "ownership": {
+            "owner": "Self",
+            "registeredOwner": ""
+          }
+        }
+      ],
+      "immovableAssets": [],
+      "movableAssets": [],
+      "securities": [],
+      "liabilities": [],
+      "otherAssets": [],
+      "declarationDate": "2026-01-09",
+      "citizenship": "Sierra Leonean",
+      "id": "d1768010500682",
+      "userId": "u3",
+      "year": 2026,
+      "date": "2026-01-09",
+      "status": "SUBMITTED",
+      "assets": {
+        "cash": 0,
+        "immovable": 0,
+        "movable": 0,
+        "securities": 0,
+        "other": 0
+      },
+      "totalLiabilities": 0
+    },
+    {
+      "surname": "Poppins",
+      "firstName": "Mary",
+      "otherNames": "",
+      "gender": "Female",
+      "citizenship": "Sierra Leonean",
+      "dob": "",
+      "maritalStatus": "Single",
+      "contact": {
+        "phones": [
+          ""
+        ],
+        "email": "",
+        "confirmEmail": "",
+        "permanentAddress": "",
+        "presentAddress": "",
+        "nationalId": "",
+        "district": "",
+        "province": "",
+        "passportNumber": "",
+        "permanentAddressSameAsPresent": false,
+        "permanentDistrict": "",
+        "permanentProvince": ""
+      },
+      "family": [],
+      "employment": [],
+      "cashAssets": [],
+      "immovableAssets": [],
+      "movableAssets": [],
+      "securities": [],
+      "liabilities": [],
+      "otherAssets": [],
+      "declarationDate": "2026-01-10",
+      "id": "d1768010681961",
+      "userId": "u3",
+      "year": 2026,
+      "date": "2026-01-10",
+      "status": "SUBMITTED",
+      "assets": {
+        "cash": 0,
+        "immovable": 0,
+        "movable": 0,
+        "securities": 0,
+        "other": 0
+      },
+      "totalLiabilities": 0
+    },
+    {
+      "surname": "Snyder",
+      "firstName": "Wesley",
+      "otherNames": "",
+      "gender": "Male",
+      "citizenship": "Sierra Leonean",
+      "dob": "",
+      "maritalStatus": "Single",
+      "contact": {
+        "phones": [
+          "(+232) "
+        ],
+        "email": "",
+        "confirmEmail": "",
+        "permanentAddress": "",
+        "presentAddress": "",
+        "nationalId": "",
+        "district": "",
+        "province": "",
+        "passportNumber": "",
+        "permanentAddressSameAsPresent": false
+      },
+      "family": [
+        {
+          "surname": "Snyder",
+          "firstName": "Joe",
+          "middleName": "",
+          "relationship": "Sibling",
+          "gender": "Female",
+          "occupation": "Student",
+          "institution": "",
+          "designation": ""
+        }
+      ],
+      "employment": [],
+      "cashAssets": [],
+      "immovableAssets": [],
+      "movableAssets": [],
+      "securities": [],
+      "liabilities": [],
+      "otherAssets": [],
+      "declarationDate": "2026-01-10",
+      "id": "d1768018790811",
+      "userId": "u3",
+      "year": 2026,
+      "date": "2026-01-10",
+      "status": "VERIFIED",
+      "assets": {
+        "cash": 0,
+        "immovable": 0,
+        "movable": 0,
+        "securities": 0,
+        "other": 0
+      },
+      "totalLiabilities": 0
+    }
+  ],
+  "audit_logs": [
+    {
+      "id": "l1",
+      "action": "User Login",
+      "user": "superadmin@ads.gov",
+      "timestamp": "2024-03-12 09:45 AM",
+      "details": "Successful login from IP 192.168.1.1",
+      "status": "Success"
+    },
+    {
+      "id": "l2",
+      "action": "Declaration Verified",
+      "user": "admin@ads.gov",
+      "timestamp": "2024-03-11 02:30 PM",
+      "details": "Verified declaration D281",
+      "status": "Success"
+    },
+    {
+      "id": "l3",
+      "action": "Failed Login",
+      "user": "unknown@ip",
+      "timestamp": "2024-03-11 01:15 AM",
+      "details": "Invalid password attempts",
+      "status": "Failed"
+    },
+    {
+      "id": "l4",
+      "action": "System Config",
+      "user": "superadmin@ads.gov",
+      "timestamp": "2024-03-10 11:00 AM",
+      "details": "Updated email server settings",
+      "status": "Success"
+    },
+    {
+      "id": "l5",
+      "action": "User Created",
+      "user": "superadmin@ads.gov",
+      "timestamp": "2024-03-09 10:00 AM",
+      "details": "Created user 'Michael Director'",
+      "status": "Success"
+    }
+  ],
+  "reports": [
+    {
+      "id": "r1",
+      "title": "Monthly Compliance Report",
+      "date": "2024-02-28",
+      "type": "Compliance",
+      "status": "Ready"
+    },
+    {
+      "id": "r2",
+      "title": "Asset Value Analysis",
+      "date": "2024-03-01",
+      "type": "Verification",
+      "status": "Ready"
+    },
+    {
+      "id": "r3",
+      "title": "System Performance Log",
+      "date": "2024-03-10",
+      "type": "System",
+      "status": "Generating"
+    }
+  ],
+  "stats": {
+    "complianceRate": 85,
+    "totalDeclarations": 12500,
+    "assetsDeclared": "1.2B",
+    "categories": [
+      {
+        "name": "Real Estate",
+        "value": 45
+      },
+      {
+        "name": "Cash Assets",
+        "value": 30
+      },
+      {
+        "name": "Vehicles",
+        "value": 15
+      },
+      {
+        "name": "Securities",
+        "value": 10
+      }
+    ],
+    "trends": [
+      {
+        "year": "2020",
+        "declarations": 8000
+      },
+      {
+        "year": "2021",
+        "declarations": 9500
+      },
+      {
+        "year": "2022",
+        "declarations": 11000
+      },
+      {
+        "year": "2023",
+        "declarations": 12500
+      }
+    ]
+  },
+  "settings": {
+    "siteName": "Asset Declaration System",
+    "maintenanceMode": false,
+    "allowRegistration": true,
+    "email": "support@ads.gov"
+  },
+  "mdas": [
+    "Ministry of Finance",
+    "Ministry of Health",
+    "Ministry of Education",
+    "Department of Public Works",
+    "Revenue Authority"
+  ],
+  "districts": [
+    "Central District",
+    "North District",
+    "South District",
+    "East District",
+    "West District"
+  ],
+  "currencies": [
+    "USD",
+    "EUR",
+    "GBP",
+    "NGN",
+    "ZAR",
+    "KES"
+  ],
+  "banks": [
+    "Bank of Sierra Leone (BSL)",
+    "Rokel Commercial Bank",
+    "Sierra Leone Commercial Bank (SLCB)",
+    "Union Trust Bank (UTB)",
+    "Ecobank Sierra Leone",
+    "Guaranty Trust Bank (GTBank)",
+    "United Bank for Africa (UBA)",
+    "Zenith Bank",
+    "Access Bank",
+    "Standard Chartered Bank",
+    "First International Bank (FIB)",
+    "Skye Bank",
+    "Bloom Bank Africa",
+    "Vista Bank"
+  ],
+  "settings": {
+    "siteName": "Asset Declaration System",
+    "supportEmail": "support@ads.gov",
+    "allowRegistration": true,
+    "maintenanceMode": false
+  }
+}
