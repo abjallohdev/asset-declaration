@@ -1,0 +1,19 @@
+
+[2026-01-09T21:10:22.620Z] Login Attempt: Email=superadmin@ads.gov, Password=password
+[2026-01-09T21:10:22.625Z] User Found: {"id":"u1","name":"Super Administrator","email":"superadmin@ads.gov","role":"SUPER_ADMIN","designation":"System Owner","status":"Active","lastLogin":"2024-03-10 09:45 AM","password":"password"}
+[2026-01-09T21:10:22.625Z] All Users: ["superadmin@ads.gov","admin@ads.gov","officer@ads.gov","user@ads.gov"]
+[2026-01-09T21:10:44.528Z] Login Attempt: Email=officer@ads.gov, Password=password
+[2026-01-09T21:10:44.530Z] User Found: {"id":"u3","name":"John Public Officer","email":"officer@ads.gov","role":"PUBLIC_OFFICER","mda":"Ministry of Finance","designation":"Senior Officer","status":"Active","lastLogin":"2024-03-12 10:15 AM","password":"password"}
+[2026-01-09T21:10:44.530Z] All Users: ["superadmin@ads.gov","admin@ads.gov","officer@ads.gov","user@ads.gov"]
+[2026-01-10T02:06:06.356Z] Login Attempt: Email=superadmin@ads.gov, Password=password
+[2026-01-10T02:06:06.369Z] User Found: {"id":"u1","name":"Super Administrator","email":"superadmin@ads.gov","role":"SUPER_ADMIN","designation":"System Owner","status":"Active","lastLogin":"2024-03-10 09:45 AM","password":"password"}
+[2026-01-10T02:06:06.374Z] All Users: ["superadmin@ads.gov","admin@ads.gov","officer@ads.gov","user@ads.gov"]
+[2026-01-10T02:06:18.424Z] Login Attempt: Email=admin@ads.gov, Password=password
+[2026-01-10T02:06:18.425Z] User Found: {"id":"u2","name":"ACC Administrator","email":"admin@ads.gov","role":"ADS_ADMIN","designation":"ACC Manager","status":"Active","lastLogin":"2024-03-11 08:30 AM","password":"password"}
+[2026-01-10T02:06:18.425Z] All Users: ["superadmin@ads.gov","admin@ads.gov","officer@ads.gov","user@ads.gov"]
+[2026-01-10T03:32:19.949Z] Login Attempt: Email=admin@ads.gov, Password=password
+[2026-01-10T03:32:19.956Z] User Found: {"id":"u2","name":"ACC Administrator","email":"admin@ads.gov","role":"ADS_ADMIN","designation":"ACC Manager","status":"Active","lastLogin":"2024-03-11 08:30 AM","password":"password"}
+[2026-01-10T03:32:19.957Z] All Users: ["superadmin@ads.gov","admin@ads.gov","officer@ads.gov","user@ads.gov"]
+[2026-01-10T03:33:05.730Z] Login Attempt: Email=superadmin@ads.gov, Password=password
+[2026-01-10T03:33:05.737Z] User Found: {"id":"u1","name":"Super Administrator","email":"superadmin@ads.gov","role":"SUPER_ADMIN","designation":"System Owner","status":"Active","lastLogin":"2024-03-10 09:45 AM","password":"password"}
+[2026-01-10T03:33:05.741Z] All Users: ["superadmin@ads.gov","admin@ads.gov","officer@ads.gov","user@ads.gov"]
